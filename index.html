@@ -5,57 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>Portfolio | Enzo ILO</title>
 </head>
 
 <header>
-    <div class="navbar">
-        <input class="checkbox" type="checkbox" />
-        <div class="hamburgerLines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
+    <nav>
+        <div class="navbar">
+            <input class="checkbox" type="checkbox" />
+            <div class="hamburgerLines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div class="menuItems"> /*Need to fix menu not disapearing on click of an element*/
+                <li><a href="#bio">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
         </div>
-        <div class="logo">
-            <h1>LOGO</h1>
-        </div>
-        <div class="menuItems">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </div>
-    </div>
+    </nav>
 </header>
 
 <body>
     <div class="container">
-        <nav>
-            <div class="bio">
-                <h1>Enzo ILO</h1>
-                <h2>bio</h2>
-                <p>Bio description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eaque veritatis
-                    animi ad, ullam similique dignissimos pariatur sed incidunt perspiciatis alias officiis ducimus
-                    nesciunt facilis minima iste nobis corporis qui?</p>
-            </div>
-        </nav>
-            <div class="skills">
-                <h2>Compétences</h2>
-                <div class="skillsGrid">
-                    <div class="skillHtml"><a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="/img/icons/html-5.png" alt=""></a><h3>HTML</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias reiciendis nostrum quaerat illo incidunt laborum dolorem impedit possimus quod, sapiente voluptas autem, iusto, voluptatibus similique explicabo ipsa a? Ea, ducimus.</p></div>
-                    <div class="skillCss"><a href="https://developer.mozilla.org/fr/docs/Web/CSS"><img src="/img/icons/css-3.png" alt=""></a><h3>CSS</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem delectus asperiores, ad quas vitae. Totam quod cumque dignissimos amet porro aspernatur itaque molestiae explicabo tempora perspiciatis, hic fugiat saepe.</p></div>
-                    <div class="skillJs"><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img src="/img/icons/js.png" alt=""></a><h3>JavaScript</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae accusamus repudiandae? Voluptate ducimus repudiandae voluptatum placeat, a quasi labore, reprehenderit culpa aspernatur autem tempora similique ipsum ipsam omnis quas.</p></div>
-                    <div class="skillPhp"><a href="https://www.php.net/"><img src="/img/icons/php.png" alt=""></a><h3>PHP</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, accusantium voluptatum. Vitae, voluptatem debitis. Nam quod magnam inventore enim ad quis earum nihil error? Magnam eos maxime similique nisi enim.</p></div>
-                    <div class="skillSql"><a href="https://www.mysql.com/fr/"><img src="/img/icons/serveur-sql.png" alt=""></a><h3>SQL</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates dolore cupiditate eos similique voluptas aperiam dolor repudiandae natus a, illum aliquid velit tempora optio harum officiis cum, accusamus ducimus.</p></div>
-                    <div class="skillPython"><a href="https://www.python.org/"><img src="/img/icons/python.png" alt=""></a><h3>Python</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum dolorum officiis placeat incidunt doloremque laudantium voluptatum sint sequi eos. Iste, quos. Vero dolore excepturi sequi facere, nam atque accusantium delectus?</p></div>
-                    <div class="skillLinux"><a href="https://www.gnu.org/home.fr.html"><img src="/img/icons/linux.png" alt=""></a><h3>Linux</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus aliquid voluptates. Provident laudantium tempora in iure qui sit, consequuntur voluptas, ea non dicta recusandae, doloremque sint? Suscipit, quia voluptatem.</p></div>
-                    <div class="skillApi"><a href="https://fr.wikipedia.org/wiki/Interface_de_programmation"><img src="/img/icons/api.png" alt=""></a><h3>API</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatum eveniet iste similique optio sint, maiores perferendis accusamus, ab tempore repellendus odit! Quam officia culpa omnis, repudiandae quasi cupiditate nostrum.</p></div>
+        <div id="bio">
+            <h1>Enzo ILO</h1>
+            <h2>Développeur Web / Web Mobile</h2>
+            <p>Bio description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eaque veritatis
+                animi ad, ullam similique dignissimos pariatur sed incidunt perspiciatis alias officiis ducimus
+                nesciunt facilis minima iste nobis corporis qui?</p>
+        </div>
+        <div id="skills">
+            <h2>Compétences</h2>
+            <div class="skillsGrid">
+                <div class="skillHtml"><a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img
+                            src="/img/icons/html-5.png" alt=""></a>
+                    <h3>HTML</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias reiciendis nostrum quaerat
+                        illo incidunt laborum dolorem impedit possimus quod, sapiente voluptas autem, iusto,
+                        voluptatibus similique explicabo ipsa a? Ea, ducimus.</p>
+                </div>
+                <div class="skillCss"><a href="https://developer.mozilla.org/fr/docs/Web/CSS"><img
+                            src="/img/icons/css-3.png" alt=""></a>
+                    <h3>CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem delectus asperiores, ad
+                        quas vitae. Totam quod cumque dignissimos amet porro aspernatur itaque molestiae explicabo
+                        tempora perspiciatis, hic fugiat saepe.</p>
+                </div>
+                <div class="skillJs"><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img
+                            src="/img/icons/js.png" alt=""></a>
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae accusamus repudiandae?
+                        Voluptate ducimus repudiandae voluptatum placeat, a quasi labore, reprehenderit culpa aspernatur
+                        autem tempora similique ipsum ipsam omnis quas.</p>
+                </div>
+                <div class="skillPhp"><a href="https://www.php.net/"><img src="/img/icons/php.png" alt=""></a>
+                    <h3>PHP</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, accusantium voluptatum. Vitae,
+                        voluptatem debitis. Nam quod magnam inventore enim ad quis earum nihil error? Magnam eos maxime
+                        similique nisi enim.</p>
+                </div>
+                <div class="skillSql"><a href="https://www.mysql.com/fr/"><img src="/img/icons/serveur-sql.png"
+                            alt=""></a>
+                    <h3>SQL</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates dolore cupiditate eos
+                        similique voluptas aperiam dolor repudiandae natus a, illum aliquid velit tempora optio harum
+                        officiis cum, accusamus ducimus.</p>
+                </div>
+                <div class="skillPython"><a href="https://www.python.org/"><img src="/img/icons/python.png" alt=""></a>
+                    <h3>Python</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum dolorum officiis placeat incidunt
+                        doloremque laudantium voluptatum sint sequi eos. Iste, quos. Vero dolore excepturi sequi facere,
+                        nam atque accusantium delectus?</p>
+                </div>
+                <div class="skillLinux"><a href="https://www.gnu.org/home.fr.html"><img src="/img/icons/linux.png"
+                            alt=""></a>
+                    <h3>Linux</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus aliquid voluptates.
+                        Provident laudantium tempora in iure qui sit, consequuntur voluptas, ea non dicta recusandae,
+                        doloremque sint? Suscipit, quia voluptatem.</p>
+                </div>
+                <div class="skillApi"><a href="https://fr.wikipedia.org/wiki/Interface_de_programmation"><img
+                            src="/img/icons/api.png" alt=""></a>
+                    <h3>API</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatum eveniet iste similique
+                        optio sint, maiores perferendis accusamus, ab tempore repellendus odit! Quam officia culpa
+                        omnis, repudiandae quasi cupiditate nostrum.</p>
                 </div>
             </div>
+        </div>
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <div class="contact-all">
+                <form id="contact-form" action="" method="POST">
+                    <input placeholder="Nom" id="name" name="name" required>
+
+                    <input placeholder="Email" id="email" name="email" required>
+
+                    <textarea placeholder="Message..." id="message" rows="5" maxlength="1500" name="message"
+                        required></textarea>
+
+                    <button id="submitButton" type="submit">Envoyer</button>
+                </form>
+                <hr>
+                <ul class="contact-list">
+                    <li class="mailIcon"><a href="mailto:example@contact.com"><img src="/img/icons/enveloppe.png"
+                                alt=""></a></li>
+                    <li class="mapIcon"><a
+                            href="https://www.google.com/maps/place/Arras/@50.2892748,2.7678897,13z/data=!3m1!4b1!4m6!3m5!1s0x47dd47d866f95a7b:0x6869aedb05652a21!8m2!3d50.291002!4d2.777535!16zL20vMHFiNTY?entry=ttu"><img
+                                src="/img/icons/emplacement.png" alt=""></a>
+                    </li>
+                    <li class="githubIcon"><a href="https://github.com/Neerz99"><img src="/img/icons/github.png"
+                                alt=""></a></li>
+                    <li class="linkedinIcon"><a href=""><img src="/img/icons/linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 
 </body>
+
+<footer>
+    <p class="copyright">
+        &copy; 2023 Enzo ILO.
+    </p>
+</footer>
 
 </html>
