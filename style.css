@@ -10,6 +10,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.container {
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
 header {
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 25%);
@@ -140,4 +145,63 @@ header .menuItems li {
 
 .navbar input[type="checkbox"]:checked~.logo {
     display: none;
+}
+
+.skills {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+.skillsGrid img {
+    display: block;
+    margin: auto;
+    width: 4vw;  
+    padding: 12px;  
+    transition: transform 0.2s ease-in-out;
+}
+
+.skillsGrid img:hover {
+    transform: scale(1.1);
+}
+
+.skillHtml,
+.skillCss,
+.skillJs,
+.skillPhp,
+.skillSql,
+.skillPython,
+.skillLinux,
+.skillApi {
+    padding: 1vw;
+    border: solid 1px #e7e7e7;
+    border-radius: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skillHtml:hover,
+.skillCss:hover,
+.skillJs:hover,
+.skillPhp:hover,
+.skillSql:hover,
+.skillPython:hover,
+.skillLinux:hover,
+.skillApi:hover {
+    background: #e7e7e7;
+    transform: scale(1.03)
+}
+
+.skillsGrid h3 {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
 }
