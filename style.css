@@ -265,6 +265,8 @@ header .menuItems li {
 
 textarea {
     resize: vertical;
+    min-height: 100px;
+    max-height: 500px;
 }
 
 #submitButton:hover {
@@ -275,6 +277,7 @@ textarea {
 
 .contact-list {
     display: flex;
+    height: fit-content;
 }
 
 .contact-list img {
@@ -319,7 +322,7 @@ textarea {
 }
 
 .linkedinIcon:hover {
-    background-color: rgb(0, 119, 181);
+    background-color: #0e76a8;
 }
 
 .linkedinIcon img:hover {
@@ -350,7 +353,6 @@ textarea {
     object-fit: cover;
     border-radius: 16px;
     border: 1px solid #b6b6b6;
-    /*changle carousel colors*/
 }
 
 .carousel::-webkit-scrollbar-thumb:hover {
