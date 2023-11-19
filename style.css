@@ -40,6 +40,11 @@ footer {
     width: auto;
 }
 
+.footer-logo {
+    height: 32px;
+    width: auto;
+}
+
 h1 {
     padding-left: 10vh;
     padding-top: 10vh;
